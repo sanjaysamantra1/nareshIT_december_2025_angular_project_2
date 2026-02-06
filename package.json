@@ -34,13 +34,15 @@
     "@vitest/coverage-v8": "^4.0.18",
     "bootstrap": "^5.3.8",
     "rxjs": "~7.8.0",
-    "tslib": "^2.3.0"
+    "tslib": "^2.3.0",
+    "@ngrx/store": "^21.0.1"
   },
   "devDependencies": {
     "@angular/build": "^21.0.5",
     "@angular/cli": "^21.0.5",
     "@angular/compiler-cli": "^21.0.0",
     "@angular/material": "^21.1.2",
+    "@ngrx/store": "^21.0.1",
     "angular-cli-ghpages": "^3.0.2",
     "jsdom": "^27.1.0",
     "typescript": "~5.9.2",
