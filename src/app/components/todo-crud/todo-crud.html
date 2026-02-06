@@ -12,3 +12,10 @@
     }
   </ol>
 </div>
+
+
+<div class="border border-2 p-2">
+  <input type="text" #toId />
+  <input type="text" #todoText />
+  <button (click)="addMyTodo(toId.value,todoText.value)">Add</button>
+</div>

@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
-import { deleteTodo, toggleTodo } from '../../actions/todo.actions';
+import { addTodo, deleteTodo, toggleTodo } from '../../actions/todo.actions';
 
 @Component({
   selector: 'app-todo-crud',
@@ -24,5 +24,9 @@ export class TodoCrud {
   }
   toggleMyTodo(id: number) {
     this.store.dispatch(toggleTodo({ id: id }));
+  }
+
+  addMyTodo(id: string, text: string) {
+    this.store.dispatch(addTodo({ payload: { id: id, text: text } }));
   }
 }
